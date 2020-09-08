@@ -1,20 +1,21 @@
 <template>
     <div class="tags-input-root" style="position: relative;">
-        <div :class="{
-            [wrapperClass + ' tags-input']: true,
-            'active': isActive,
-        }">
+        <div class="tags-input-badge-wrapper">
             <span class="tags-input-badge tags-input-badge-pill tags-input-badge-selected-default"
                 v-for="(tag, index) in tags"
                 :key="index"
             >
-                <span v-html="tag.value"></span>
+            <span v-html="tag.value"></span>
 
-                <a href="#"
-                    class="tags-input-remove"
-                    @click.prevent="removeTag(index)"></a>
+            <a href="#"
+                class="tags-input-remove"
+                @click.prevent="removeTag(index)"></a>
             </span>
-
+        </div>
+        <div :class="{
+            [wrapperClass + ' tags-input']: true,
+            'active': isActive,
+        }">
             <input type="text"
                 ref="taginput"
                 :placeholder="placeholder"

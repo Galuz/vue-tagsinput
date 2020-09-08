@@ -1,4 +1,5 @@
 /* The input */
+
 .tags-input {
     display: flex;
     flex-wrap: wrap;
@@ -21,9 +22,7 @@
 
 .tags-input-wrapper-default {
     padding: .5em .25em;
-
     background: #fff;
-
     border: 1px solid transparent;
     border-radius: .25em;
     border-color: #dbdbdb;
@@ -35,7 +34,9 @@
     outline: 0 none;
 }
 
+
 /* The tag badges & the remove icon */
+
 .tags-input span {
     margin-right: 0.3em;
 }
@@ -54,13 +55,13 @@
     outline: none;
 }
 
-.tags-input-remove:before, .tags-input-remove:after {
+.tags-input-remove:before,
+.tags-input-remove:after {
     content: '';
     position: absolute;
     width: 75%;
     left: 0.15em;
     background: #5dc282;
-    
     height: 2px;
     margin-top: -1px;
 }
@@ -68,11 +69,18 @@
 .tags-input-remove:before {
     transform: rotate(45deg);
 }
+
 .tags-input-remove:after {
     transform: rotate(-45deg);
 }
 
+
 /* Tag badge styles */
+
+.tags-input-badge-wrapper .tags-input-badge {
+    margin-right: 4px;
+}
+
 .tags-input-badge {
     position: relative;
     display: inline-block;
@@ -99,19 +107,25 @@
     background-color: #f0f1f2;
 }
 
+
 /* Typeahead */
+
 .typeahead-hide-btn {
     color: #999 !important;
     font-style: italic;
 }
 
+
 /* Typeahead - badges */
-.typeahead-badges > span {
+
+.typeahead-badges>span {
     cursor: pointer;
     margin-right: 0.3em;
 }
 
+
 /* Typeahead - dropdown */
+
 .typeahead-dropdown {
     list-style-type: none;
     padding: 0;
@@ -126,7 +140,9 @@
     cursor: pointer;
 }
 
+
 /* Typeahead elements style/theme */
+
 .tags-input-typeahead-item-default {
     color: #fff;
     background-color: #343a40;
